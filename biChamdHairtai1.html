@@ -1,0 +1,41 @@
+<script>
+  const names = ["Bayaraa", "Delger", "Urlee", "Zolboo"];
+
+  names.pop(); //remove last
+  names.push("Bold"); //add last
+
+  names.shift(); //remove list
+  names.unshift("Sarnai"); //add first
+
+  console.log(names);
+
+  names[2]; //Urlee
+
+  const she = "urlee";
+
+  const len = names.length;
+
+  for (let i = 0; i < len; i++) {
+    if (names[i] === she) {
+      console.log(i);
+      break;
+    }
+  }
+
+  const position = names.indexOf("Urlee");
+  console.log(position);
+
+  const ages = [21, 33, 35, 16, 19, 12, 13];
+
+  const index = ages.findIndex(function (item) {
+    return item < 18;
+  });
+  console.log(index);
+
+  const minors = ages.filter(function (item) {
+    return item > 18;
+  });
+  console.log(minors);
+
+  //   console.log(names[2]);
+</script>

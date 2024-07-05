@@ -1,25 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <script> 
-   
-    //"Comments can make code readable"  
-    // "Comments can make code readable"
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+  </head>
+  <body>
+    <main>
+      <button onclick="location.reload ()">Refresh</button>
+      <pre>
+        <code id="output"></code>
+      </pre>
+    </main>
+    <script>
+      /*let day = prompt("Өдөр шалгана уу?")
+      if( day==1){console.log(alert("Monday"))}
+      else if (day==2){console.log(alert("Tuesday"))}
+      else if (day==3){console.log(alert("Wednesday"))}
+      else if (day==4){console.log(alert("Thursday"))}
+      else if (day==5){console.log(alert("Friday"))}
+      else if (day==6){console.log(alert("Saturday"))}
+      else if (day==7){console.log(alert("Sunday"))
+       }else{
+          console.log(alert("Таны оруулсан утга алдаатай байна.."))
+       }*/
 
-    /*"Comments can make code readable"
-    "Comments can make code readable"
-    "Comments can make code readable"
-    "Comments can make code readable"
-    "Comments can make code readable"*/
+      /*let score = prompt("Write your score:");
+        if (0 < score && score <= 59) {
+          console.log(alert("F"));
+        } else if (60 <= score && score <= 69) {
+          console.log(alert("D"));
+        } else if (70 <= score && score <= 79) {
+          console.log(alert("C"));
+        } else if (80 <= score && score <= 89) {
+          console.log(alert("B"));
+        } else if (90 <= score && score <= 100) {
+          console.log(alert("A"));
+        } else {
+          console.log(alert("Таны оруулсан утга алдаатай байна.."));
+        }*/
 
-        let var1 = 4 ,var2 = 3
-        result = (true = (var1 > var2 ), false = ( var1 < var2))
-        console.log(result)
+      /*let pass = prompt("Enter password:");
+      while (pass != "pass1234") {
+        pass = prompt("Wrong password, please try again");
+      }
+      alert("Access granted");*/
+
+     const n = prompt("1-s niilber oloh hurtelh duriin toog oruulna uu?");
+      const output = document.getElementById("output");
+      let sum = 0;
+      for (let i = 1; i <= n; i++) {
+        sum += i;
+        output.innerText += i + "\n";
+      }
+      output.innerText += "Гараас өгсөн тооны нийлбэр" + sum;
     </script>
-</body>
+  </body>
 </html>
